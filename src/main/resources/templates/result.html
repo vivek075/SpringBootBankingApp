@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Banking Application</title>
+</head>
+<body>
+<h1>Result</h1>
+<p th:text="${message}"></p>
+<div th:if="${account != null}">
+    <p>Account ID: <span th:text="${account.id}"></span></p>
+    <p>Balance: <span th:text="${account.balance}"></span></p>
+</div>
+<a href="/">Back</a>
+</body>
+</html>
